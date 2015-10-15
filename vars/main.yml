@@ -1,1 +1,39 @@
 ---
+znc_system_user: "znc"
+znc_system_group: "znc"
+znc_system_user_dir: "/home/{{znc_system_user}}"
+znc_config_dir: "{{znc_system_user_dir|expanduser}}/znc"
+znc_base_port: 6666
+znc_firewall_bypass_port: 6666
+znc_max_buffer_size: 5000
+znc_auto_clear_chan_buffer: "false"
+znc_buffer: 500
+znc_alt_nick: "{{znc_nick}}_"
+znc_extra_modules: []
+znc_nick: lbragstad
+znc_quit_msg: disconnecting
+znc_real_name: Lance Bragstad
+znc_networks:
+    - name: freenode
+      server_name: chat.freenode.net
+      server_port: 6667
+      ident: lbragstad
+      channels:
+        - "#openstack"
+        - "#openstack-qa"
+        - "#openstack-dev"
+        - "#openstack-doc"
+        - "#openstack-nova"
+        - "#openstack-oslo"
+        - "#openstack-sdks"
+        - "#openstack-infra"
+        - "#openstack-neutron"
+        - "#openstack-ansible"
+        - "#openstack-meeting"
+        - "#openstack-keystone"
+        - "#openstack-meeting-3"
+        - "#openstack-meeting-4"
+        - "#openstack-meeting-alt"
+        - "#cryptography-dev"
+        - "#keystone-faster"
+        - "#pypy"

@@ -1,0 +1,7 @@
+---
+- hosts: znc
+  tasks:
+    - include_vars: "vars/main.yml"
+    - include_vars: "vars/secrets.yml"
+    - include: handlers/main.yml
+    - include: tasks/main.yml
